@@ -26,7 +26,7 @@
 
 /* ---------- Tailwind tokens (bg-page, text-main, text-heading, border-line, shadow-bento, animate-scroll …) ---------- */
 @theme {
-  --color-primary: #eb5d3a;
+  --color-primary: #3b82f6;
 
   --shadow-bento:
     inset 0 0.362176px 0.651917px -1px hsla(0, 0%, 100%, 0.025),

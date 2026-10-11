@@ -54,6 +54,7 @@ export default function Navbar() {
   const { t } = useLanguage();
   const [open, setOpen] = useState(false);
   const scrolled = y > 50;
+  const { theme } = useTheme();
 
   return (
     <header className="relative start-0 top-0 z-[999] w-full">
@@ -71,7 +72,7 @@ export default function Navbar() {
             {/* Desktop logo */}
             <Link href="/" className="hidden shrink-0 py-0.5 lg:block">
               <Image
-                src="/images/logo.png"
+                src={theme === "dark" ? "/logo.svg" : "light-logo.svg"}
                 alt="Logo"
                 width={300}
                 height={100}
@@ -85,11 +86,12 @@ export default function Navbar() {
               <div className="flex items-center justify-between lg:hidden">
                 <Link href="/">
                   <Image
-                    src="/images/logo.png"
+                    src={theme === "dark" ? "/logo.svg" : "light-logo.svg"}
                     alt="Logo"
                     width={300}
                     height={100}
-                    className="h-auto w-[75px]"
+                    className="h-auto w-[120px]"
+                    priority
                   />
                 </Link>
                 <div className="flex items-center gap-3">

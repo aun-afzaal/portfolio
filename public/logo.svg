@@ -1,10 +1,10 @@
-<svg width="270" height="34" viewBox="0 0 270 34" xmlns="http://www.w3.org/2000/svg">
+<svg width="310" height="30" viewBox="0 0 310 30" xmlns="http://www.w3.org/2000/svg">
 
   <text
     x="0"
     y="26"
-    font-family="Arial Black, Helvetica, sans-serif"
-    font-size="22"
+    font-family="Poopins sans-serif"
+    font-size="32"
     font-weight="900"
     letter-spacing="1px"
     fill="white"
@@ -13,10 +13,10 @@
   </text>
 
   <text
-    x="170"
+    x="235"
     y="26"
-    font-family="Arial Black, Helvetica, sans-serif"
-    font-size="22"
+    font-family="Poopins sans-serif"
+    font-size="32"
     font-weight="900"
     letter-spacing="1px"
     fill="#3b82f6"
