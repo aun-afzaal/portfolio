@@ -1,0 +1,27 @@
+<svg width="270" height="34" viewBox="0 0 270 34" xmlns="http://www.w3.org/2000/svg">
+
+  <text
+    x="0"
+    y="26"
+    font-family="Arial Black, Helvetica, sans-serif"
+    font-size="22"
+    font-weight="900"
+    letter-spacing="1px"
+    fill="white"
+  >
+    MUHAMMAD
+  </text>
+
+  <text
+    x="170"
+    y="26"
+    font-family="Arial Black, Helvetica, sans-serif"
+    font-size="22"
+    font-weight="900"
+    letter-spacing="1px"
+    fill="#3b82f6"
+  >
+    AUN
+  </text>
+
+</svg>
