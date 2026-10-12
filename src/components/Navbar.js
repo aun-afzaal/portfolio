@@ -64,9 +64,10 @@ export default function Navbar() {
               <Image
                 src={theme === "dark" ? "/logo.svg" : "light-logo.svg"}
                 alt="Logo"
-                width={300}
-                height={100}
-                className="h-auto w-[120px]"
+                width={400}
+                height={150}
+                
+                className="h-auto w-[250px]"
                 priority
               />
             </Link>
@@ -80,7 +81,7 @@ export default function Navbar() {
                     alt="Logo"
                     width={300}
                     height={100}
-                    className="h-auto w-[75px]"
+                    className="h-auto w-[200px]"
                   />
                 </Link>
                 <div className="flex items-center gap-3">
