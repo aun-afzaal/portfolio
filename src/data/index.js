@@ -1,6 +1,6 @@
 export const companyLogos = [
   { src: "/images/Simula.png", w: 133, h: 32 },
-  { src: "/images/accellionx.png", w: 60, h: 20 },
+  { src: "/images/accellionx.png", w: 100, h: 10 },
   { src: "/images/abcodify.png", w: 166, h: 35 },
   // { src: "/images/aqarlink.png", w: 118, h: 30 },
 ];

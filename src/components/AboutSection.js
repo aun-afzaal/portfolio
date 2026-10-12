@@ -12,7 +12,7 @@ export default function AboutSection() {
   const duplicated = [...companyLogos, ...companyLogos];
 
   return (
-    <section id="about" className="pb-[15px] pt-[60px] md:pt-20 lg:pt-[115px]">
+    <section id="about" className="pb-[25px] pt-[60px] md:pt-20 lg:pt-[115px]">
       <div className={container}>
         <div className="grid grid-cols-1 gap-x-6 gap-y-[30px] lg:grid-cols-12">
           <div className="lg:col-span-4">
@@ -70,7 +70,7 @@ export default function AboutSection() {
               </div>
             </Reveal>
 
-            <Reveal delay="0.2s" className={`${card} mt-[30px] p-10`}>
+            <Reveal delay="0.2s" className={`${card} mt-[30px] p-5`}>
               <h2 className="mb-[35px]">{t("about.companies")}</h2>
               {/* dir=ltr keeps the marquee direction the same in RTL languages */}
               <div dir="ltr" className="marquee-mask overflow-hidden">
