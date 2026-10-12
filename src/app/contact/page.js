@@ -9,13 +9,16 @@ import { useLanguage } from "../../context/LanguageContext";
 
 const input =
   "w-full rounded-[10px] border border-line bg-transparent px-5 py-[19px] text-base leading-[1.3] text-heading outline-none transition-colors placeholder:text-heading/40 focus:border-primary";
-const label = "mb-[18px] block text-base font-medium text-main";
 
+const select =
+  "w-full rounded-[10px] border border-line bg-surface px-5 py-[19px] text-base leading-[1.3] text-heading outline-none transition-colors focus:border-primary";
+
+const label = "mb-[18px] block text-base font-medium text-main";
 const contactItems = [
   {
     icon: "ri-map-pin-line",
-    label: "office",
-    value: "officeValue",
+    label: "location",
+    value: "locationValue",
     delay: "0.2s",
   },
   { icon: "ri-phone-line", label: "phone", value: "phoneValue", delay: "0.4s" },
@@ -24,23 +27,54 @@ const contactItems = [
 
 export default function ContactPage() {
   const { t } = useLanguage();
-  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
-
+  const [status, setStatus] = useState("idle");
   async function onSubmit(e) {
     e.preventDefault();
     const form = e.currentTarget;
     setStatus("sending");
+    const fd = new FormData(form);
+    const payload = {
+      fname: fd.get("fname") || "",
+      lname: fd.get("lname") || "",
+      email: fd.get("email") || "",
+      service: fd.get("service") || "",
+      message: fd.get("message") || "",
+      timestamp: Date.now(),
+    };
+
+    const MAILER_URL = "http://localhost:3000/api/contact";
+    const SECRET = "Test";
+
     try {
-      const res = await fetch("/api/contact", {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(JSON.stringify(payload) + SECRET);
+
+      const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+
+      const signature = Array.from(new Uint8Array(hashBuffer))
+        .map((b) => b.toString(16).padStart(2, "0"))
+        .join("");
+
+      const res = await fetch(MAILER_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        headers: {
+          "Content-Type": "application/json",
+          "x-signature": signature,
+        },
+        body: JSON.stringify(payload),
       });
-      if (!res.ok) throw new Error();
-      form.reset();
-      setStatus("sent");
-    } catch {
-      setStatus("error");
+
+      const dataRes = await res.json();
+
+      if (res.ok && dataRes.success) {
+        form.reset();
+        setStatus("✓ Message sent! We'll be in touch within 24 hours.");
+      } else {
+        throw new Error(dataRes.error || "Failed to send message");
+      }
+    } catch (err) {
+      setStatus(err.message || "Something went wrong");
+    } finally {
     }
   }
 
@@ -62,10 +96,12 @@ export default function ContactPage() {
                 >
                   {contactItems.map(({ icon, label: l, value, delay }) => (
                     <Reveal key={icon} delay={delay} className="pb-5">
-                      <i className={`${icon} text-xl text-primary`} />
-                      <h2 className="my-[5px] text-base font-medium capitalize text-subtitle">
-                        {t(`contact.${l}`)}
-                      </h2>
+                      <span className="fle gap-2 items-center">
+                        <i className={`${icon} text-xl text-primary`} />
+                        <h2 className="my-[5px] text-base font-medium capitalize text-subtitle">
+                          {t(`contact.${l}`)}
+                        </h2>
+                      </span>
                       <p>{t(`contact.${value}`)}</p>
                     </Reveal>
                   ))}
@@ -81,11 +117,24 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 gap-x-6 md:grid-cols-2">
                       <div className="mb-8">
                         <label htmlFor="name" className={label}>
-                          {t("contact.form.name")}
+                          {t("contact.form.fname")}
                         </label>
                         <input
                           id="name"
-                          name="name"
+                          name="fname"
+                          type="text"
+                          required
+                          placeholder={t("contact.form.namePlaceholder")}
+                          className={input}
+                        />
+                      </div>
+                      <div className="mb-8">
+                        <label htmlFor="name" className={label}>
+                          {t("contact.form.lname")}
+                        </label>
+                        <input
+                          id="name"
+                          name="lname"
                           type="text"
                           required
                           placeholder={t("contact.form.namePlaceholder")}
@@ -94,11 +143,38 @@ export default function ContactPage() {
                       </div>
                       <div className="mb-8">
                         <label htmlFor="email" className={label}>
+                          {t("contact.form.service")}
+                        </label>
+
+                        <select
+                          name="service"
+                          placeholder={t("contact.form.servicePlaceholder")}
+                          className={select}
+                        >
+                          <option value="">
+                            {t("contact.form.servicePlaceholder")}
+                          </option>
+                          <option value="Web">{t("contact.form.web")}</option>
+                          <option value="Mobile">
+                            {t("contact.form.mobile")}
+                          </option>
+                          <option value="DevOps">
+                            {t("contact.form.devOps")}
+                          </option>
+                          <option value="AI">{t("contact.form.ai")}</option>
+                          <option value="UI">{t("contact.form.ui")}</option>
+                          <option value="Other">
+                            {t("contact.form.other")}
+                          </option>
+                        </select>
+                      </div>
+                      <div className="mb-8">
+                        <label htmlFor="email" className={label}>
                           {t("contact.form.email")}
                         </label>
                         <input
                           id="email"
-                          name="email"
+                          name="service"
                           type="email"
                           required
                           placeholder={t("contact.form.emailPlaceholder")}

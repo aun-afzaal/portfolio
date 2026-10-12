@@ -1,6 +1,6 @@
 "use client";
 
-import { companyLogos, socials } from "@/data";
+import { companyLogos, profile, socials } from "@/data";
 import Reveal from "./Reveal";
 import Image from "next/image";
 import { btnFilled, card, container } from "./ui";
@@ -15,30 +15,28 @@ export default function AboutSection() {
     <section id="about" className="pb-[15px] pt-[60px] md:pt-20 lg:pt-[115px]">
       <div className={container}>
         <div className="grid grid-cols-1 gap-x-6 gap-y-[30px] lg:grid-cols-12">
-          {/* Profile card */}
           <div className="lg:col-span-4">
             <Reveal delay="0.3s" className={`${card} p-10 text-center`}>
               <Image
-              style={"rounded"}
                 src="/images/aun.jpg"
                 alt={t("about.name")}
                 width={300}
                 height={300}
-                  className="mx-auto h-[300px] w-[300px] max-w-full rounded-full object-cover"
+                className="mx-auto h-[300px] w-[300px] max-w-full rounded-full object-cover"
               />
               <h2 className="text-[40px] lg:max-xl:text-[30px] my-5 tracking-widest">
                 {t("about.name")}
               </h2>
               <p>{t("about.role")}</p>
               <ul className="mt-[30px] flex flex-wrap justify-center gap-y-4">
-                {socials.map(({ icon, href, label }) => (
-                  <li key={href} className="mx-[15px] lg:max-xl:mx-0.5">
+                {socials.map(({ icon, href, label, bg }) => (
+                  <li key={href} className="mx-[15px] lg:max-xl:mx-0.5 my-2">
                     <a
                       href={href}
                       target="_blank"
                       rel="noreferrer"
                       aria-label={label}
-                      className="rounded-[10px] border border-line px-3 py-2.5 text-xl text-heading"
+                      className={`rounded-[10px] border border-line px-3 py-2.5 text-xl text-white ${bg}`}
                     >
                       <i className={icon} />
                     </a>
@@ -48,7 +46,6 @@ export default function AboutSection() {
             </Reveal>
           </div>
 
-          {/* Intro + companies */}
           <div className="lg:col-span-8">
             <Reveal delay="0.2s" className={`${card} p-10`}>
               <p>{t("about.hello")}</p>
@@ -62,7 +59,11 @@ export default function AboutSection() {
                 </li>
               </ul>
               <div className="mt-[30px]">
-                <Link href="/contact" className={btnFilled}>
+                <Link
+                  href={profile.cvUrl}
+                  download="M.Aun Resume.pdf"
+                  className={btnFilled}
+                >
                   {t("about.downloadCv")}{" "}
                   <i className="ri-download-line ms-1" />
                 </Link>
@@ -78,7 +79,7 @@ export default function AboutSection() {
                     <Image
                       key={i}
                       src={src}
-                      alt=""
+                      alt={i}
                       width={w}
                       height={h}
                       aria-hidden={i >= companyLogos.length}

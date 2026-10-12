@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
   experimental: {
     agentFeedback: true,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.pravatar.cc",
+        pathname: "/**",
+      },
+    ],
   },
   cacheComponents: true,
   partialPrefetching: true,

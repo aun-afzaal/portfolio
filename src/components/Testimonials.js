@@ -19,13 +19,12 @@ export default function Testimonials({ items }) {
 
   return (
     <Reveal delay="0.3s">
-      {/* dir=ltr keeps scroll maths identical in RTL; each card restores the real direction */}
       <div
         ref={ref}
         dir="ltr"
         className="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
-        {items.map((item, i) => (
+        {items?.map((item, i) => (
           <div
             key={i}
             dir={dir}
@@ -38,7 +37,7 @@ export default function Testimonials({ items }) {
               height={60}
               className="mb-[25px] inline-block h-[60px] w-[60px] rounded-full object-cover"
             />
-            <p className="mb-[30px]">{item.text}</p>
+            <p className="mb-[30px]">{item.message}</p>
             <h5 className="mb-0 text-xl text-subtitle">{item.name}</h5>
             <span className="text-sm leading-[22px] text-muted">
               {item.role}

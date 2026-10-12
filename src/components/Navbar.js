@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { useLanguage } from "../context/LanguageContext";
-import { useTheme } from "../context/ThemeContext";
-import { btnOutline, container } from "./ui";
+import { useLanguage } from "@/context/LanguageContext";
+import { useTheme } from "@/context/ThemeContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { btnOutline, container } from "@/components/ui";
 import useScroll from "@/hooks/UseScroll";
 
 const navLinks = [
@@ -19,22 +20,11 @@ const navLinks = [
 
 function HeaderControls() {
   const { theme, toggleTheme } = useTheme();
-  const { lang, setLang, languages, t } = useLanguage();
+  const { t } = useLanguage();
 
   return (
     <div className="flex items-center gap-2">
-      <select
-        aria-label={t("nav.language")}
-        value={lang}
-        onChange={(e) => setLang(e.target.value)}
-        className="rounded-[10px] border border-line bg-transparent px-2 py-1 text-sm text-heading outline-none"
-      >
-        {languages.map(({ code, name }) => (
-          <option key={code} value={code} className="bg-surface text-heading">
-            {name}
-          </option>
-        ))}
-      </select>
+      <LanguageSwitcher />
 
       <button
         type="button"
@@ -90,8 +80,7 @@ export default function Navbar() {
                     alt="Logo"
                     width={300}
                     height={100}
-                    className="h-auto w-[120px]"
-                    priority
+                    className="h-auto w-[75px]"
                   />
                 </Link>
                 <div className="flex items-center gap-3">

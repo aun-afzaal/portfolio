@@ -15,19 +15,19 @@ export default function Footer() {
             <p className="text-center leading-5 lg:text-start">
               {/* {t("footer.copyright")} {new Date().getFullYear()},{" "} */}
               <Link href="/" className="text-primary">
-                Bentos
+                {t("profile.name")}
               </Link>{" "}
               {t("footer.rights")}
             </p>
             <p className="text-center leading-5 lg:text-end">
               {t("footer.crafted")}{" "}
               <a
-                href="https://github.com/jamilrayhan10"
+                href="https://abcodify.com"
                 target="_blank"
                 rel="noreferrer"
                 className="text-primary"
               >
-                rk theme
+                {t("profile.company")}
               </a>
             </p>
           </div>

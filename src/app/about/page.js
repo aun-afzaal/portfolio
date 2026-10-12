@@ -23,9 +23,9 @@ function ResumeColumn({ data }) {
             <i className="ri-book-line" />
           </div>
           <div>
-            <span className="mb-5 block leading-none">{item.years}</span>
+            <span className="mb-5 block leading-none">{item.time}</span>
             <h4 className="my-3 text-xl text-subtitle">{item.title}</h4>
-            <span className="text-base text-muted">{item.company}</span>
+            <span className="text-base text-muted">{item.subtitle}</span>
           </div>
         </Reveal>
       ))}
