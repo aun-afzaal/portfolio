@@ -65,7 +65,7 @@ export const socials = [
     icon: "ri-mail-line",
     href: `mailto:${profile.email}`,
     label: "Email",
-    bg: "!text-black hover:border-black border-grey border-2",
+    bg: "bg-[#1D74F2] hover:bg-[#1AC5FB]",
   },
 ];
 

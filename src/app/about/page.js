@@ -44,11 +44,11 @@ export default function AboutPage() {
             <div className="lg:col-span-4">
               <Reveal delay="0.3s" className={`${card} p-10`}>
                 <Image
-                  src="/images/profile.png"
+                  src="/images/aun.jpg"
                   alt={t("about.name")}
                   width={300}
                   height={300}
-                  className="mx-auto h-auto w-full"
+                  className="mx-auto h-[300px] w-[300px] max-w-full rounded-full object-cover"
                 />
               </Reveal>
             </div>
@@ -57,8 +57,9 @@ export default function AboutPage() {
                 <h2 className="mb-5 text-[30px] font-normal leading-10 md:text-[40px] md:leading-[50px]">
                   {t("aboutPage.title")}
                 </h2>
-                <p className="mb-4">{t("aboutPage.p1")}</p>
-                <p>{t("aboutPage.p2")}</p>
+                <p>{t("aboutPage.p1")}</p>
+                <p className="my-4">{t("aboutPage.p2")}</p>
+                <p>{t("aboutPage.p3")}</p>
                 <div className="mt-[30px]">
                   <Link href="/contact" className={btnFilled}>
                     {t("aboutPage.button")}{" "}

@@ -36,7 +36,7 @@ export default function AboutSection() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={label}
-                      className={`rounded-[10px] border border-line px-3 py-2.5 text-xl text-white ${bg}`}
+                      className={`rounded-[10px] border border-line px-3 py-2.5 text-xl text-white ${bg ? bg : ""}`}
                     >
                       <i className={icon} />
                     </a>

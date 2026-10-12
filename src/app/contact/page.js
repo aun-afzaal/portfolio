@@ -42,7 +42,7 @@ export default function ContactPage() {
       timestamp: Date.now(),
     };
 
-    const MAILER_URL = "http://localhost:3000/api/contact";
+    const MAILER_URL = "https://abcodify.com/api/contact";
     const SECRET = "Test";
 
     try {
@@ -225,7 +225,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <CtaSection />
+      {/* <CtaSection /> */}
     </>
   );
 }

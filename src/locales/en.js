@@ -55,8 +55,9 @@ const en = {
 
   aboutPage: {
     title: "I'm Muhammad Aun, a Full-Stack Software Engineer.",
-    p1: "I specialize in modern JavaScript/TypeScript ecosystems (React, Next.js, Node.js, NestJS). I design resilient backend microservices, high-throughput REST/GraphQL APIs, and cloud-native web architectures engineered for performance and reliability.",
-    p2: "My work spans e-commerce, KYC and identity verification, service marketplaces, real-time streaming and delivery platforms, built with React, Vue, Angular and NestJS on PostgreSQL, and shipped on AWS, Vercel and Railway.",
+    p1: "I specialize in modern JavaScript/TypeScript ecosystems (React, Next.js, Node.js, NestJS) and Python technologies (Flask, FastAPI). I design resilient backend microservices, high-throughput REST/GraphQL APIs, data-driven applications, and cloud-native architectures engineered for performance, scalability, and reliability.",
+    p2: "My work spans e-commerce, KYC and identity verification, service marketplaces, real-time streaming and delivery platforms, and data analytics solutions. I build with React, Vue, Angular, NestJS, Flask, and FastAPI, leveraging PostgreSQL, Python data science libraries (Pandas, NumPy, and Matplotlib), and modern cloud platforms such as AWS, Vercel, and Railway.",
+    p3: "Beyond full-stack engineering, I work with data analytics, business intelligence (BI), interactive dashboards, data visualization, and analytical reporting. Using Python, Pandas, NumPy, and Matplotlib, I transform raw data into actionable insights, develop analytics-driven solutions, and build intuitive dashboards that support data-informed decision-making.",
     button: "Get In touch",
   },
   resume: {
@@ -290,6 +291,29 @@ const en = {
     solution: "The Solution",
     results: "Key Results",
     visit: "Visit Project",
+  },
+
+  home: {
+    aboutLabel: "About Me",
+    aboutTitle: "Engineering Resilient Systems",
+    aboutHighlight: "& Modern Digital Experiences.",
+    aboutDescription:
+      "Full-Stack Software Engineer with specialized experience in JavaScript/TypeScript ecosystems (React, Next.js, Node.js, NestJS, and PostgreSQL). I've architected and delivered production-grade infrastructure—from high-conversion SaaS platforms and automated KYC workflows to real-time event-driven systems—serving thousands of active users. Dedicated to code readability, strict typing, scalable microservices, and performance tuning.",
+    viewAll: "View All",
+    stats: {
+      experience: "Years Experience",
+      companies: "Global Companies",
+      apps: "Production Apps",
+      users: "End Users Served",
+    },
+    expertise: {
+      label: "Technical Expertise",
+      title: "Built for Scale and Reliability",
+      frontend: "Frontend Engineering",
+      backend: "Backend Architecture",
+      databases: "Database Systems",
+      infrastructure: "Real-Time Infrastructure",
+    },
   },
 };
 
