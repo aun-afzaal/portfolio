@@ -19,7 +19,6 @@ export default function SingleProjectPage() {
   }
 
   const { content, image, gallery = [], stack = [], url } = project;
-  const lang = content.en && content.ar ? undefined : "en";
 
   const language = dir === "rtl" ? "ar" : "en";
   const details = content[language] || content.en;
@@ -61,14 +60,20 @@ export default function SingleProjectPage() {
         </div>
 
         <div className={`${container} overflow-hidden`}>
-          <Image
-            src={image}
-            alt={details.title}
-            width={1920}
-            height={900}
-            className="h-auto w-full rounded-2xl object-cover"
-            priority
-          />
+          {image === "/images/no-image.png" ? (
+            <div className="flex h-full w-full items-center justify-center text-5xl text-muted">
+              <i className="ri-code-s-slash-line" />
+            </div>
+          ) : (
+            <Image
+              src={image}
+              alt={details.title}
+              width={1920}
+              height={900}
+              className="h-auto w-full rounded-2xl object-cover"
+              priority
+            />
+          )}
         </div>
 
         <div className={`${container} pt-[30px]`}>

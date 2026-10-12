@@ -14,7 +14,7 @@ export default function ProjectImage({
 
   return (
     <div className={`relative overflow-hidden bg-page ${className}`}>
-      {failed || !src ? (
+      {failed || !src || src === "/images/no-image.png" ? (
         <div className="flex h-full w-full items-center justify-center text-5xl text-muted">
           <i className="ri-code-s-slash-line" />
         </div>

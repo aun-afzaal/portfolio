@@ -221,7 +221,7 @@ export const projects = [
   {
     slug: "invoice",
     category: "web",
-    image: "/images/invoice.png",
+    image: "/images/no-image.png",
     stack: ["Vue.js", "Node.js", "PostgreSQL", "JWT Auth"],
     url: null,
     content: {
@@ -381,7 +381,7 @@ export const projects = [
   {
     slug: "discord-bot",
     category: "web",
-    image: "/images/discord-bot.png",
+    image: "/images/no-image.png",
     stack: [
       "Python",
       "Discord.py",
@@ -507,7 +507,7 @@ export const projects = [
   {
     slug: "glass-calc",
     category: "web",
-    image: "/images/glass-calc.png",
+    image: "/images/no-image.png",
     stack: ["Angular", "TypeScript", "JS → TS Migration"],
     url: null,
     content: {
@@ -639,7 +639,7 @@ export const projects = [
   {
     slug: "raap-builder",
     category: "web",
-    image: "/images/raap-builder.png",
+    image: "/images/no-image.png",
     stack: ["React", "CSS", "Responsive Design", "UI Refactor"],
     url: null,
     content: {
