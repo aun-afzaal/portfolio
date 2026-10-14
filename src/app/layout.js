@@ -16,17 +16,17 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-const SITE_URL = "https://aun.abcodify.com";
-const TITLE = "Muhammad Aun – Full-Stack Software Engineer & System Architect";
+const SITE_URL = "https://bazif.abcodify.com";
+const TITLE = "Muhammad Bazif – Full-Stack Software Engineer & System Architect";
 const DESCRIPTION =
-  "Muhammad Aun is a Full-Stack Software Engineer specializing in scalable microservices, high-concurrency web applications, MERN stack, Next.js, and cloud architecture (AWS/Docker).";
+  "Muhammad Bazif is a Full-Stack Software Engineer specializing in scalable microservices, high-concurrency web applications, MERN stack, Next.js, and cloud architecture (AWS/Docker).";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: TITLE,
   description: DESCRIPTION,
   keywords: [
-    "Muhammad Aun",
+    "Muhammad Bazif",
     "Full Stack Engineer",
     "Software Architect",
     "React",
@@ -42,9 +42,14 @@ export const metadata = {
     "CI/CD",
     "Cloud Native",
     "Web Performance Optimization",
-    "Lahore Pakistan",
+    "Scalable Web Applications",
+    "automation",
+    "mobile app automation",
+    "reverse engineering",
+    "golang",
+    "c#"
   ],
-  authors: [{ name: "Muhammad Aun" }],
+  authors: [{ name: "Muhammad Bazif" }],
   alternates: { canonical: "/" },
   robots: {
     index: true,
@@ -54,9 +59,9 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    siteName: "Muhammad Aun",
+    siteName: "Muhammad Bazif",
     locale: "en_PK",
-    title: "Muhammad Aun – Full-Stack Software Engineer",
+    title: "Muhammad Bazif – Full-Stack Software Engineer",
     description:
       "Architecting resilient microservices, high-throughput SaaS platforms, and modern web applications with Next.js, TypeScript, and AWS.",
     images: [
@@ -64,13 +69,13 @@ export const metadata = {
         url: "/android-chrome-512x512.png",
         width: 512,
         height: 512,
-        alt: "Muhammad Aun",
+        alt: "Muhammad Bazif",
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "Muhammad Aun – Full-Stack Software Engineer",
+    title: "Muhammad Bazif – Full-Stack Software Engineer",
     description:
       "Production-grade web apps, cloud-native backend systems, and high-performance user interfaces.",
     images: ["/android-chrome-512x512.png"],
@@ -80,12 +85,12 @@ export const metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Muhammad Aun",
+  name: "Muhammad Bazif",
   jobTitle: "Software Engineer",
   url: SITE_URL,
   sameAs: [
-    "https://github.com/aun-afzaal",
-    "https://linkedin.com/in/aun-afzaal",
+    "https://github.com/Muhammad-Bazif/",
+    "https://www.linkedin.com/in/muhammad-bazif-034758282/",
   ],
   knowsAbout: [
     "Software Engineering",
@@ -98,8 +103,13 @@ const jsonLd = {
     "TypeScript",
     "Docker",
     "AWS",
+    "Golang",
+    "C#",
+    "Mobile App Automation",
+    "Reverse Engineering",
+    "monolithic to microservices",
   ],
-  worksFor: { "@type": "Organization", name: "Simulalab" },
+  worksFor: { "@type": "Organization", name: "Freelance" },
 };
 
 const rtlLangs = Object.entries(locales)

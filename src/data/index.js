@@ -1,26 +1,27 @@
 export const companyLogos = [
-  { src: "/images/Simula.png", w: 133, h: 32 },
-  { src: "/images/accellionx.png", w: 100, h: 10 },
+  { src: "/images/mslm.png", w: 1, h: 32 },
+  { src: "/images/plinthsol.png", w: 100, h: 10 },
   { src: "/images/abcodify.png", w: 166, h: 35 },
-  // { src: "/images/aqarlink.png", w: 118, h: 30 },
+  { src: "/images/1stshield1.png", w: 300, h: 30 },
+  { src: "/images/seebiz.png", w: 50, h: 30 },
 ];
 export const companies = [
-  { name: "Simulalab", href: "https://simulalab.org" },
+  { name: "Mslm", href: "https://mslm.io" },
   { name: "ABCodify", href: "https://abcodify.com" },
-  { name: "AccellionX", href: "https://accellionx.com" },
+  { name: "Plinthsol", href: "https://accellionx.com" },
 ];
 
 export const profile = {
-  email: "dev.aunafzaal@gmail.com",
-  name: "Muahmmad Aun",
-  phone: "+92 336 1484463",
-  github: "https://github.com/aun-afzaal",
-  linkedin: "https://linkedin.com/in/aun-afzaal",
-  site: "https://aun.abcodify.com",
-  fb: "https://www.facebook.com/itx.AunAfzaal",
-  insta: "https://www.instagram.com/aun_afzaal",
-  x: "https://www.x.com/AunAfzaal",
-  cvUrl: "/assets/cv.pdf",
+  email: "muhammadbazif321@gmail.com",
+  name: "Muhammad Bazif",
+  phone: "+92 305 9690200",
+  github: "https://github.com/Muhammad-Bazif",
+  linkedin: "https://www.linkedin.com/in/muhammad-bazif-034758282/",
+  site: "https://bazif.abcodify.com",
+  fb: "https://www.facebook.com/",
+  insta: "https://www.instagram.com/",
+  x: "https://www.x.com/",
+  cvUrl: "/assets/M.Bazif.pdf",
 };
 
 export const socials = [
@@ -81,52 +82,49 @@ export const categories = [
 
 export const projects = [
   {
-    slug: "revona",
+    slug: "zoros",
     category: "backend",
     featured: true,
-    image: "/images/revona.png",
+    image: "/images/zoros1.png",
     stack: [
-      "NestJS",
+      "Golang",
       "React",
-      "Refine.dev",
+      "Astro",
       "Stripe",
       "AWS S3",
       "Mailgun",
       "PostgreSQL",
-      "Railway",
     ],
     url: null,
     content: {
       en: {
-        tag: "NestJS · React",
-        title: "Revona — Car Service Platform",
-        desc: "Multi-product car service platform: service types, appointment booking, Stripe payments, S3 uploads, Mailgun mail, push notifications, Swagger APIs, AWS + Railway.",
+        tag: "Golang · React",
+        title: "Zoros.io Developer-First Cybersecurity APIs",
+        desc: "Multi-product, Access real-time and historical data through our enterprise-grade APIs. Built for developers, trusted by security teams.",
         challenge:
-          "Build a multi-product car service platform supporting service types, appointment booking, Stripe payments with webhook verification, image uploads via S3, transactional email via Mailgun, push notifications, and full Swagger API docs for both admin and app — deployed on AWS with Railway for staging.",
+          "Build a scalable, developer-first cybersecurity API platform providing DNS history, SSL certificate intelligence, WHOIS data, fraud detection, email threat detection, email verification, and credit risk scoring. Develop secure, high-performance microservices with real-time and historical data access, reliable API integrations, authentication, comprehensive Swagger documentation, and a centralized admin panel — deployed with production-grade infrastructure, monitoring, and scalability.",
         solution:
-          "NestJS backend + PostgreSQL. Implemented product types, service types, booking flow with date selection, Stripe webhook verification, S3 image upload pipeline, Mailgun integration, notification system. React + Refine.dev admin panel. Full Swagger docs per audience. AWS production, Railway staging.",
+          "Implemented a Go-based microservices architecture with PostgreSQL to power multiple cybersecurity data services. Developed APIs for DNS history, SSL certificates, WHOIS lookups, fraud detection, email threat intelligence, email verification, and credit risk scoring. Built secure API access, optimized data retrieval, real-time processing, and historical data management. Created comprehensive Swagger documentation for developers, along with a centralized admin interface for managing services and API operations. Designed for high availability, low latency, scalability, and compliance-focused security, with production deployment and infrastructure monitoring.",
         results: [
           "Stripe + webhook payment verification",
-          "S3 image upload pipeline",
-          "Mailgun transactional mail",
-          "Swagger for admin + app APIs",
-          "AWS prod + Railway staging",
+          "Multi-tenant architecture",
+          "Microservices APIs",
+          "AWS prod",
         ],
       },
       ar: {
-        tag: "NestJS · React",
-        title: "Revona — منصة خدمات السيارات",
-        desc: "منصة خدمات سيارات متعددة المنتجات: أنواع الخدمات، حجز المواعيد، Stripe، S3، Mailgun، إشعارات.",
+        tag: "Golang · React",
+        title: "Zoros.io — واجهات برمجية للأمن السيبراني",
+        desc: "منصة متكاملة للمطورين توفر وصولًا آمنًا إلى بيانات الأمن السيبراني الآنية والتاريخية عبر واجهات برمجية متقدمة، موثوقة من قبل فرق الأمن السيبراني.",
         challenge:
-          "بناء منصة خدمات سيارات مع Stripe Webhook وS3 وMailgun والإشعارات وSwagger API.",
+          "بناء منصة متكاملة وقابلة للتوسع لواجهات برمجية متخصصة في الأمن السيبراني، تشمل سجل DNS التاريخي، وشهادات SSL، وبيانات WHOIS، واكتشاف الاحتيال، واكتشاف تهديدات البريد الإلكتروني، والتحقق من عناوين البريد الإلكتروني، وتقييم المخاطر الائتمانية. تطوير بنية خدمات مصغرة آمنة وعالية الأداء، تدعم الوصول إلى البيانات الآنية والتاريخية، وإدارة المستأجرين المتعددين، والمصادقة، والتوثيق الشامل باستخدام Swagger، ولوحة تحكم مركزية، مع بنية تحتية جاهزة للإنتاج وقابلة للتوسع.",
         solution:
-          "NestJS + PostgreSQL. Stripe Webhook، S3، Mailgun، إشعارات. React + Refine.dev. AWS إنتاج.",
+          "تطوير بنية خدمات مصغرة باستخدام Go وقاعدة بيانات PostgreSQL لتشغيل مجموعة متكاملة من خدمات الأمن السيبراني. إنشاء واجهات برمجية لسجل DNS التاريخي، وشهادات SSL، وبيانات WHOIS، واكتشاف الاحتيال، وتحليل تهديدات البريد الإلكتروني، والتحقق من عناوين البريد الإلكتروني، وتقييم المخاطر الائتمانية. تطبيق بنية متعددة المستأجرين مع عزل البيانات، وإدارة مفاتيح API، والتحكم في الوصول، وتتبع الاستخدام، وتحسين أداء استرجاع البيانات ومعالجتها. توفير توثيق شامل باستخدام Swagger ولوحة تحكم مركزية لإدارة المستأجرين والخدمات والعمليات، مع التركيز على الأمان وقابلية التوسع والتوافر العالي وانخفاض زمن الاستجابة.",
         results: [
-          "التحقق من Stripe Webhook",
-          "خط رفع الصور S3",
-          "البريد عبر Mailgun",
-          "Swagger للإدارة والتطبيق",
-          "AWS إنتاج + Railway تطوير",
+          "بنية متعددة المستأجرين",
+          "واجهات برمجية قائمة على الخدمات المصغرة",
+          "Microservices APIs",
+          "نشر بيئة الإنتاج على AWS"
         ],
       },
     },
@@ -136,7 +134,7 @@ export const projects = [
     slug: "trumeid",
     category: "web",
     image: "/images/trumeid.png",
-    gallery: ["/images/trumeid-dashboard.png"],
+    gallery: ["/images/trumeid.png"],
     stack: [
       "React",
       "Sumsub",
@@ -180,39 +178,44 @@ export const projects = [
   },
 
   {
-    slug: "trumeid-dashboard",
+    slug: "Email Verifier",
     category: "web",
-    image: "/images/trumeid-dashboard.png",
-    stack: ["React", "Vite", "Node.js", "REST API", "JWT"],
+    image: "/images/emailverifier.png",
+    stack: ["React", "Vite", "Golang", "REST API", "PostgreSQL"],
     url: null,
     content: {
       en: {
-        tag: "React · Vite",
-        title: "Trumeid Dashboard",
-        desc: "Company dashboard to create user login links, manage verification flows, and let users check and validate their authenticity.",
+        tag: "React · Vite · Golang",
+        title: "Email Verifier",
+        desc: "A real-time email verification platform that checks email addresses, identifies email risks, and displays detailed validation results through a clean, responsive dashboard, with verification data stored in PostgreSQL.",
         challenge:
-          "Company dashboard where businesses create user login links so their users can validate authenticity through the Trumeid verification system.",
+          "Build a reliable email verification platform that validates email addresses through a backend API and displays results in real time. Identify mailbox availability, accept-all domains, disposable addresses, free email providers, role-based addresses, and malformed emails. Store verification records in PostgreSQL and provide structured API responses for frontend display and JSON export.",
         solution:
-          "React + Vite dashboard with Node.js backend. Create, manage and share user login links. Real-time verification status, user management, and audit logs.",
+          "Developed a React + Vite frontend integrated with a Golang REST API and PostgreSQL database. Implemented real-time email verification with detailed status indicators for mailbox validation, accept-all domains, disposable email detection, free email providers, role-based addresses, and malformed email formats. Stored verification results in the database for historical tracking and retrieval, and added a Copy as JSON feature to export structured verification responses.",
         results: [
-          "Login link generator",
-          "Real-time verification status",
-          "User management",
-          "Company-level access control",
+          "Real-time email verification results",
+          "PostgreSQL verification data storage",
+          "Six email validation indicators",
+          "REST API with structured JSON responses",
+          "Copy verification results as JSON",
+          "Responsive verification dashboard",
         ],
       },
       ar: {
-        tag: "React · Vite",
-        title: "لوحة تحكم Trumeid",
-        desc: "لوحة تحكم للشركات لإنشاء روابط دخول المستخدمين وإدارة تدفقات التحقق.",
-        challenge: "لوحة تحكم للشركات لإنشاء روابط دخول للتحقق من الهوية.",
+        tag: "React · Vite · Golang",
+        title: "منصة التحقق من البريد الإلكتروني",
+        desc: "منصة للتحقق الفوري من عناوين البريد الإلكتروني واكتشاف المخاطر المحتملة، مع عرض نتائج تفصيلية عبر لوحة تحكم سهلة الاستخدام وتخزين بيانات التحقق في PostgreSQL.",
+        challenge:
+          "إنشاء منصة موثوقة للتحقق من عناوين البريد الإلكتروني عبر واجهة برمجية خلفية، مع عرض النتائج بشكل فوري. تشمل عملية التحقق من صلاحية صندوق البريد، والنطاقات التي تقبل جميع العناوين، والعناوين المؤقتة، ومزودي البريد المجاني، وعناوين الأدوار الوظيفية، وتنسيق البريد الإلكتروني غير الصحيح. مع تخزين سجلات التحقق في PostgreSQL وتوفير نتائج منظمة بصيغة JSON.",
         solution:
-          "React + Vite + Node.js. إنشاء وإدارة روابط الدخول وتتبع التحقق.",
+          "تطوير واجهة باستخدام React وVite وربطها بواجهة REST API مبنية باستخدام Golang وقاعدة بيانات PostgreSQL. تنفيذ التحقق الفوري من البريد الإلكتروني وعرض مؤشرات تفصيلية لحالة صندوق البريد، والنطاقات التي تقبل جميع العناوين، والعناوين المؤقتة، ومزودي البريد المجاني، وعناوين الأدوار الوظيفية، والتنسيق غير الصحيح. تخزين نتائج التحقق في قاعدة البيانات لاسترجاعها وتتبعها، مع إضافة ميزة نسخ النتائج بصيغة JSON.",
         results: [
-          "مولد روابط الدخول",
-          "تتبع التحقق الفوري",
-          "إدارة المستخدمين",
-          "تحكم على مستوى الشركة",
+          "نتائج تحقق فورية للبريد الإلكتروني",
+          "تخزين بيانات التحقق في PostgreSQL",
+          "ستة مؤشرات للتحقق من البريد الإلكتروني",
+          "واجهة REST API مع استجابات JSON منظمة",
+          "نسخ نتائج التحقق بصيغة JSON",
+          "لوحة تحكم متجاوبة",
         ],
       },
     },
@@ -268,13 +271,13 @@ export const projects = [
       en: {
         tag: "Refine.dev · Admin",
         title: "Admin Dashboard — Lottomax",
-        desc: "Admin panel to view and create draws for UsaLottomax. Complete CRUD for draw management built with Refine.dev.",
+        desc: "Admin panel to view and create records for UsaLottomax. Complete CRUD for record management built with Refine.dev.",
         challenge:
-          "Admin dashboard for UsaLottomax where administrators can view, create, update and delete lottery draws.",
+          "Admin dashboard for UsaLottomax where administrators can view, create, update and delete lottery records.",
         solution:
-          "Refine.dev-based admin with full CRUD for draw management. Draw type configuration, scheduling, result entry, and status management.",
+          "Refine.dev-based admin with full CRUD management. Records type configuration, scheduling, result entry, and status management.",
         results: [
-          "Full CRUD for draws",
+          "Full CRUD",
           "Draw type management",
           "Scheduling + results",
           "Refine.dev architecture",
@@ -298,16 +301,16 @@ export const projects = [
   },
 
   {
-    slug: "icecream",
+    slug: "internet speedo meter",
     category: "backend",
     featured: true,
-    image: "/images/icecream.png",
+    image: "/images/internetspeed.png",
     stack: ["Vue.js", "NestJS", "PostgreSQL", "Billing Engine", "TypeScript"],
     url: null,
     content: {
       en: {
-        tag: "Vue · Multi-Vendor",
-        title: "Ice Cream Inventory System",
+        tag: "Go . React",
+        title: "Internet Speedo meter",
         desc: "Multi-vendor platform — vendors purchase and supply ice cream, manage pricing, daily end-of-day billing, sales tracking, supplier charges and inventory return management.",
         challenge:
           "Multi-vendor ice cream inventory system: vendors purchase, supply to suppliers, manage pricing, run end-of-day billing, charge suppliers for sales, track return inventory.",

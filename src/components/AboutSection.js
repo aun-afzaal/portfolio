@@ -18,7 +18,7 @@ export default function AboutSection() {
           <div className="lg:col-span-4">
             <Reveal delay="0.3s" className={`${card} p-10 text-center`}>
               <Image
-                src="/images/aun.jpg"
+                src="/images/bazifpic.png"
                 alt={t("about.name")}
                 width={300}
                 height={300}
@@ -28,7 +28,7 @@ export default function AboutSection() {
                 {t("about.name")}
               </h2>
               <p>{t("about.role")}</p>
-              <ul className="mt-[30px] flex flex-wrap justify-center gap-y-4">
+              <ul className="mt-[18px] flex flex-wrap justify-center gap-y-4">
                 {socials.map(({ icon, href, label, bg }) => (
                   <li key={href} className="mx-[15px] lg:max-xl:mx-0.5 my-2">
                     <a
@@ -47,9 +47,9 @@ export default function AboutSection() {
           </div>
 
           <div className="lg:col-span-8">
-            <Reveal delay="0.2s" className={`${card} p-10`}>
+            <Reveal delay="0.2s" className={`${card} p-6`}>
               <p>{t("about.hello")}</p>
-              <h2 className="mb-5 text-[30px] font-normal leading-10 md:text-[40px] md:leading-[54px] lg:leading-[50px]">
+              <h2 className="mb-3 text-[30px] font-normal leading-10 md:text-[40px] md:leading-[54px] lg:leading-[50px]">
                 {t("about.headline")}
               </h2>
               <ul>
@@ -61,7 +61,7 @@ export default function AboutSection() {
               <div className="mt-[30px]">
                 <Link
                   href={profile.cvUrl}
-                  download="M.Aun Resume.pdf"
+                  download="M.Bazif Resume.pdf"
                   className={btnFilled}
                 >
                   {t("about.downloadCv")}{" "}
@@ -83,7 +83,7 @@ export default function AboutSection() {
                       width={w}
                       height={h}
                       aria-hidden={i >= companyLogos.length}
-                      className="mr-[30px] h-auto w-auto"
+                      className="mr-[20px] h-auto w-auto"
                     />
                   ))}
                 </div>

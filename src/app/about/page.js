@@ -6,7 +6,7 @@ import CtaSection from "@/components/CtaSection";
 import Reveal from "@/components/Reveal";
 import { btnFilled, card, container } from "@/components/ui";
 import { useLanguage } from "../../context/LanguageContext";
-import Testimonials from "@/components/Testimonials";
+// import Testimonials from "@/components/Testimonials";
 import SectionTitle from "@/components/SectionTitle";
 
 function ResumeColumn({ data }) {
@@ -44,7 +44,7 @@ export default function AboutPage() {
             <div className="lg:col-span-4">
               <Reveal delay="0.3s" className={`${card} p-10`}>
                 <Image
-                  src="/images/aun.jpg"
+                  src="/images/bazifpic.png"
                   alt={t("about.name")}
                   width={300}
                   height={300}
@@ -81,7 +81,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-[15px]">
+      {/* <section className="py-[15px]">
         <div className={container}>
           <div className={`${card} p-10`}>
             <SectionTitle
@@ -91,7 +91,7 @@ export default function AboutPage() {
             <Testimonials items={t("testimonials.items")} />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <CtaSection />
     </>

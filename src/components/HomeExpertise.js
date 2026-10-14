@@ -14,12 +14,12 @@ const expertise = [
   {
     key: "backend",
     icon: "ri-server-line",
-    skills: ["Node.js", "NestJS", "REST APIs"],
+    skills: ["Golang", "Python", "Node.js", "NestJS", "REST APIs"],
   },
   {
     key: "databases",
     icon: "ri-database-2-line",
-    skills: ["PostgreSQL", "Redis", "Data Modeling"],
+    skills: ["PostgreSQL", "SQL", "Redis", "Data Modeling",],
   },
   {
     key: "infrastructure",

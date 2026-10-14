@@ -62,7 +62,7 @@ export default function Navbar() {
             {/* Desktop logo */}
             <Link href="/" className="hidden shrink-0 py-0.5 lg:block">
               <Image
-                src={theme === "dark" ? "/logo.svg" : "light-logo.svg"}
+                src={theme === "dark" ? "/bazif1.svg" : "light-logo1.svg"}
                 alt="Logo"
                 width={400}
                 height={150}

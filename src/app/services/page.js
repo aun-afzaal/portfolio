@@ -39,7 +39,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-[15px]">
+      {/* <section className="py-[15px]">
         <div className={container}>
           <div className={`${card} p-10`}>
             <SectionTitle
@@ -89,7 +89,7 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <CtaSection />
     </>

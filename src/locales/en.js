@@ -1,6 +1,6 @@
 const en = {
   profile: {
-    name: "Muhammad Aun",
+    name: "Muhammad Bazif",
     company: "ABCodify",
     title: "Full-Stack Software Engineer & System Architect",
   },
@@ -18,11 +18,11 @@ const en = {
     scrollTop: "Scroll to top",
   },
   about: {
-    name: "Muhammad Aun",
-    role: "Full-Stack Software Engineer based in Lahore, Pakistan.",
+    name: "Muhammad Bazif",
+    role: "Full-Stack Software Engineer",
     hello: "Hello There!",
     headline:
-      "I'm Muhammad Aun, a Full-Stack Engineer architecting scalable enterprise systems.",
+      "I'm Muhammad Bazif, a Full-Stack Engineer architecting scalable enterprise systems.",
     available: "Available for Freelancing",
     downloadCv: "Download CV",
     companies: "Company I Worked With",
@@ -50,11 +50,11 @@ const en = {
   footer: {
     copyright: "Copyright @",
     rights: "All Rights Reserved.",
-    crafted: "Crafted with ❤️",
+    crafted: "Crafted with ",
   },
 
   aboutPage: {
-    title: "I'm Muhammad Aun, a Full-Stack Software Engineer.",
+    title: "I'm Muhammad Bazif, a Full-Stack Software Engineer.",
     p1: "I specialize in modern JavaScript/TypeScript ecosystems (React, Next.js, Node.js, NestJS) and Python technologies (Flask, FastAPI). I design resilient backend microservices, high-throughput REST/GraphQL APIs, data-driven applications, and cloud-native architectures engineered for performance, scalability, and reliability.",
     p2: "My work spans e-commerce, KYC and identity verification, service marketplaces, real-time streaming and delivery platforms, and data analytics solutions. I build with React, Vue, Angular, NestJS, Flask, and FastAPI, leveraging PostgreSQL, Python data science libraries (Pandas, NumPy, and Matplotlib), and modern cloud platforms such as AWS, Vercel, and Railway.",
     p3: "Beyond full-stack engineering, I work with data analytics, business intelligence (BI), interactive dashboards, data visualization, and analytical reporting. Using Python, Pandas, NumPy, and Matplotlib, I transform raw data into actionable insights, develop analytics-driven solutions, and build intuitive dashboards that support data-informed decision-making.",
@@ -64,16 +64,16 @@ const en = {
     experience: {
       title: "Experience",
       items: [
-        { time: "2023 - Present", title: "ABCodify", subtitle: "@ Founder" },
+        { time: "2023 - Present", title: "ABCodify", subtitle: "@ Co. Founder" },
         {
-          time: "2025 - Present",
-          title: "Simulalab",
-          subtitle: "Software Engineer",
+          time: "2024 - 2024",
+          title: "Mslm",
+          subtitle: "Junior Software Engineer",
         },
         {
-          time: "2023 - 2025",
-          title: "AccellionX",
-          subtitle: "Associate Software Engineer",
+          time: "2024 - 2026",
+          title: "Plinthsol",
+          subtitle: "Software Engineer",
         },
       ],
     },
@@ -85,16 +85,16 @@ const en = {
           title: "The University of the Punjab",
           subtitle: "Bachelor's In Information Technology",
         },
-        {
-          time: "2026",
-          title: "Nocdot",
-          subtitle: "Artification Intelligence - Huawei",
-        },
-        {
-          time: "2025",
-          title: "Excellence Delivered",
-          subtitle: "Data Analyst - IBM",
-        },
+        // {
+        //   time: "2026",
+        //   title: "Nocdot",
+        //   subtitle: "Artification Intelligence - Huawei",
+        // },
+        // {
+        //   time: "2025",
+        //   title: "Excellence Delivered",
+        //   subtitle: "Data Analyst - IBM",
+        // },
       ],
     },
   },
@@ -298,7 +298,7 @@ const en = {
     aboutTitle: "Engineering Resilient Systems",
     aboutHighlight: "& Modern Digital Experiences.",
     aboutDescription:
-      "Full-Stack Software Engineer with specialized experience in JavaScript/TypeScript ecosystems (React, Next.js, Node.js, NestJS, and PostgreSQL). I've architected and delivered production-grade infrastructure—from high-conversion SaaS platforms and automated KYC workflows to real-time event-driven systems—serving thousands of active users. Dedicated to code readability, strict typing, scalable microservices, and performance tuning.",
+      "Full-Stack Software Engineer with specialized experience in JavaScript/TypeScript ecosystems (Golang, Python, React, Next.js, Node.js, NestJS, SQL and PostgreSQL). I've architected and delivered production-grade infrastructure—from high-conversion SaaS platforms and automated KYC workflows to real-time event-driven systems—serving thousands of active users. Dedicated to code readability, strict typing, scalable microservices, and performance tuning.",
     viewAll: "View All",
     stats: {
       experience: "Years Experience",

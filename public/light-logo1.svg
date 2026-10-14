@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="30" viewBox="0 0 310 30" role="img" aria-label="Muhammad Bazif">
+  <defs>
+    <linearGradient id="bazifBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2586ff"/>
+      <stop offset="100%" stop-color="#1764d8"/>
+    </linearGradient>
+  </defs>
+  <text x="0" y="24" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700" letter-spacing="-0.7">
+    <tspan fill="#000000">Muhammad </tspan><tspan fill="url(#bazifBlue)">Bazif</tspan>
+  </text>
+</svg>
