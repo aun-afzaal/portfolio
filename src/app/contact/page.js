@@ -42,7 +42,7 @@ export default function ContactPage() {
       timestamp: Date.now(),
     };
 
-    const MAILER_URL = "https://abcodify.com/api/contact";
+    const MAILER_URL = "https://www.abcodify.com/api/contact";
     const SECRET = "Test";
 
     try {
