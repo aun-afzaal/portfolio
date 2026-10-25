@@ -48,7 +48,6 @@ export default function ContactPage() {
     try {
       const encoder = new TextEncoder();
       const data = encoder.encode(JSON.stringify(payload) + SECRET);
-
       const hashBuffer = await crypto.subtle.digest("SHA-256", data);
 
       const signature = Array.from(new Uint8Array(hashBuffer))
