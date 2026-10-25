@@ -173,7 +173,7 @@ export default function ContactPage() {
                         </label>
                         <input
                           id="email"
-                          name="service"
+                          name="email"
                           type="email"
                           required
                           placeholder={t("contact.form.emailPlaceholder")}
