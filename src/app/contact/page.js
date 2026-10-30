@@ -37,6 +37,7 @@ export default function ContactPage() {
       fname: fd.get("fname") || "",
       lname: fd.get("lname") || "",
       email: fd.get("email") || "",
+      web: "M.Aun",
       service: fd.get("service") || "",
       message: fd.get("message") || "",
       timestamp: Date.now(),
