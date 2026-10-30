@@ -154,7 +154,7 @@ const en = {
     location: "Location:",
     locationValue: "Lahore, Pakistan",
     phone: "Phone:",
-    phoneValue: "+923361484463:",
+    phoneValue: "+923361484463",
     email: "Email:",
     emailValue: "dev.aunafzaal@gmail.com",
     github: "GitHub:",
